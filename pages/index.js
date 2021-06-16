@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
 
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { faAngry } from "@fortawesome/free-solid-svg-icons";
@@ -10,6 +11,18 @@ import { faBahai } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
+  const [pressed, setPressed] = useState(false);
+  const [startX, setStartX] = useState(null);
+  const [x, setX] = useState(null);
+
+  const eventHandler = (e) => {
+    if (e.type === "mousedown") {
+      setPressed(true);
+      setStartX(e.nativeEvent.offsetX);
+      console.log(startX);
+    }
+  };
+
   return (
     <div className="body">
       <Head>
@@ -19,7 +32,7 @@ export default function Home() {
       </Head>
 
       <main className="body">
-        <div className="slider">
+        <div className="slider" onMouseDown={eventHandler}>
           <div className="slider-inner">
             <div className="slide-img">
               <FontAwesomeIcon className="icon" icon={faCoffee} />
