@@ -20,23 +20,25 @@ export default function Home() {
 
       <main className="body">
         <div className="slider">
-          <div className="slide-img">
-            <FontAwesomeIcon icon={faCoffee} />
-          </div>
-          <div className="slide-img">
-            <FontAwesomeIcon icon={faAngry} />
-          </div>
-          <div className="slide-img">
-            <FontAwesomeIcon icon={faAd} />
-          </div>
-          <div className="slide-img">
-            <FontAwesomeIcon icon={faArchive} />
-          </div>
-          <div className="slide-img">
-            <FontAwesomeIcon icon={faAward} />
-          </div>
-          <div className="slide-img">
-            <FontAwesomeIcon icon={faBahai} />
+          <div className="slider-inner">
+            <div className="slide-img">
+              <FontAwesomeIcon className="icon" icon={faCoffee} />
+            </div>
+            <div className="slide-img">
+              <FontAwesomeIcon className="icon" icon={faAngry} />
+            </div>
+            <div className="slide-img">
+              <FontAwesomeIcon className="icon" icon={faAd} />
+            </div>
+            <div className="slide-img">
+              <FontAwesomeIcon className="icon" icon={faArchive} />
+            </div>
+            <div className="slide-img">
+              <FontAwesomeIcon className="icon" icon={faAward} />
+            </div>
+            <div className="slide-img">
+              <FontAwesomeIcon className="icon" icon={faBahai} />
+            </div>
           </div>
         </div>
       </main>

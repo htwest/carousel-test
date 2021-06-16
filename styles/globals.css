@@ -6,13 +6,15 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.icon {
+  color: white;
+  font-size: 3rem;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
+.icon:hover {
+  color: blue;
 }
 
 .slider {
@@ -21,15 +23,24 @@ a {
   top: 30%;
   width: 80%;
   height: 200px;
-}
-
-.slide-img {
-  color: white;
-  background-color: black;
-  margin: 10px;
   overflow: hidden;
 }
 
-.slide-img:hover {
-  color: blue;
+.slider-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  pointer-events: none;
+}
+
+.slide-img {
+  height: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 3rem;
 }
