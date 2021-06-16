@@ -15,11 +15,21 @@ a {
   box-sizing: border-box;
 }
 
+.slider {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  width: 80%;
+  height: 200px;
+}
+
 .slide-img {
-  height: 400px;
-  width: 400px;
   color: white;
   background-color: black;
   margin: 10px;
   overflow: hidden;
+}
+
+.slide-img:hover {
+  color: blue;
 }
