@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.slide-img {
+  height: 400px;
+  width: 400px;
+  color: white;
+  background-color: black;
+  margin: 10px;
+  overflow: hidden;
+}
